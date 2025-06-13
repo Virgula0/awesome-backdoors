@@ -10,11 +10,11 @@ Create a fake DLL for intercepting function calls from an application.
 Steps for reproducing. In this demo, I'll try to backdoor `Firefox`
 
 - Open a new Visual Studio Project -> DLL Type
-- Copy the DDL that will be attacked in the same root directory of the `Visual Studio Code` Project.
-In the case of Firefox, I'll copy `xul.dll` (remember to delete `xul.dll.sig` in the same place)
-- Rename the copied dll to another name, from `xul.dll` example `assets.dll`
-- Run the script `dll_export.py` providing the DLL we're attacking. This can take a while for a big application like `Firefox`
-- Copy and paste `dllmain.cpp` content in the cpp file of the project and paste the obtained output from `dll_export.py`
+- Copy the DDL that will be attacked in the same root directory of the `Visual Studio` project.
+In the case of Firefox, I'll copy `xul.dll` (remember to delete `xul.dll.sig`)
+- Rename the copied dll to something else. Example: from `xul.dll` to `assets.dll`
+- Run the script `dll_export.py` providing the DLL we're attacking. This can take a while for a big application like `Firefox`. In my example I provided `assets.dll` to the script.
+- Copy and paste `dllmain.cpp` content in the cpp main file in the project and paste the obtained output from `dll_export.py`
 You should obtain something like this:
 
 ```cpp
