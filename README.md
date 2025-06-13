@@ -20,7 +20,7 @@ The `General` folder will contain payloads that can be used for both `user` and 
 > The goal of this repo is not to create fully undetectable backdoors for malicious purposes but only to keep track
 > of the most interesting and creative ones that can eventually be used in `CTF` or authorized Penetration Tests.
 > Also, this repo contains code and exploits that can harm your machine, so be careful with this.
-> I do not assume any respnsability for illegal purposes.
+> I do not assume any responsibility for illegal purposes.
 
 # Contribution
 
