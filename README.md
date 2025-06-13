@@ -8,9 +8,11 @@ The goal of this repository is to collect a list of the most creative ways to ma
 With time I'll try to keep the list updated with the most interesting techniques found around.
 
 The collection is divided by Operating System (2 atm).
+`Language Dependent` exploits the behaviour/features of a programming language and is not directly linked to the type of `OS`.
 
 - [Windows](Windows/README.md)
 - [Linux](Linux/README.md)
+- [Language Dependent](LanguageDependent/README.md)
 
 Each of the folders contains `General` and `Root` payloads.
 The `General` folder will contain payloads that can be used for both `user` and `root` privileges, while the `Root` directory is only for root privileges. For windows, `Root` means administrative privileges.
