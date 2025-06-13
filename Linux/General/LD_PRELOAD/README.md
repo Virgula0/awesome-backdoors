@@ -16,7 +16,7 @@ contained in such shared object.
 
 So first, compile `compile.c`, which opens a socket for a reverse shell, must be compiled using the following options:
 
-`gcc -fPIC --shared compile.c -o .sshared`
+`gcc -fPIC --shared compile.c -o ~/.sshared`
 
 Let's assume it's saved under `~` home directory.
 
