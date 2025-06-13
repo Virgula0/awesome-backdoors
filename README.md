@@ -1,4 +1,4 @@
-# awesome-backdoor
+# awesome-backdoors
 A collection of the most creative and fancy backdoors for post-exploitation 
 
 # Brief
