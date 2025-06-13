@@ -1,8 +1,10 @@
 # DLL Proxy
 
-This technique allows the creation of a proxy DLL and forwarding the original needed function from an application to the original DLL while attempting to 
-run malicious code from the DLL built for proxying.
+This technique allows to create a DLL as a proxy to forward the original needed functions by the application to the original DLL while attempting to run malicious code from the new DLL built.
 The idea was taken from https://github.com/leetCipher/Malware.development/tree/main/dll-proxying 
+Cheers to leetCipher.
+
+# Exploit
 
 Create a fake DLL for intercepting function calls from an application.
 Steps for reproducing. In this demo, I'll try to backdoor `Firefox`
