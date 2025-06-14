@@ -1,6 +1,6 @@
 # PHP Object Deserialization
 
-The `PHP Object Deserialization` is not exactly a backdooring technique but it's rather a real vulnerability.
+The `PHP Object Deserialization` is not exactly a backdooring technique but it's rather a PHP feature which can lead to a real vulnerabiliy.
 So in scenarios where a `PHP Object Deserialization` is already present, it can be exploited for achieving `LFI`, `Arbitrary File Read`, `RFI` and in worse cases `RCE`.
 In this example, we'll use the PHP deserialization mechanism to modify some source codes of compromised machine adding some code that looks innocent to the most unaware users, but actually it's a backdoor for achieving `RCE`.
 
