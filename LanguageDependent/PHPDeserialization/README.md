@@ -7,7 +7,7 @@ In this example, we'll use the PHP deserialization mechanism to modify some sour
 More info about deserialization can be found at: https://www.php.net/manual/it/language.oop5.serialization.php
 
 Let's suppose we have a class of the application called `User` which defines its own methods and instance variables.
-We add an instance variable called `cmd` and we add the `__toString()` methos (or only the body of the function if it's already declared). Note that other magic methods can be used of course.
+We add an instance variable called `cmd` and we add the `__toString()` method (or only the body of the function if it's already declared). Note that other magic methods can be used of course.
 The file will contain a script like this (`manage.php`)
 
 ```php
