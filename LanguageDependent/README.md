@@ -12,4 +12,4 @@ A trick for embedding backdoors within a pre-trained machine learning model whic
 
 > Language: PHP
 
-Allows modification of PHP source code by adding a stealth backdoor that can be harder to spot for unaware users.
+Allows modification of PHP source code by adding a stealth backdoor that can be hard to spot for unaware users.
