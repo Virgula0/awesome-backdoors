@@ -3,7 +3,8 @@
 > What is a netfilter?
 
 ```
-Netfilter is a framework within the Linux kernel that allows for packet filtering, network address translation (NAT), and other network-related manipulations...
+Netfilter is a framework within the Linux kernel that allows for packet filtering, 
+network address translation (NAT), and other network-related manipulations...
 
 More info: https://www.digitalocean.com/community/tutorials/a-deep-dive-into-iptables-and-netfilter-architecture
 ```
@@ -153,7 +154,7 @@ module_exit(backdoor_exit);
 
 # How does it work?
 
-Basically, what we're doing is intercepting TCP packets at a low level and extracting some info from each packet. The TCP packet payload will look like this: MAGIC:IP:PORT. So when there is an incoming connection, the module will start to inspect the TCP payload and check if it matches the already described pattern. If yes, an attempt to spawn a reverse shell on a specified IP and PORT will be tried. We can bypass firewall rules as checks by Netfilter are done before reaching any firewall rule.
+Basically, what we're doing is intercepting TCP packets at a low level and extracting some info from each packet. The TCP packet payload will look like this: `MAGIC:IP:PORT`. So when there is an incoming connection, the module will start to inspect the TCP payload and check if it matches the already described pattern. If yes, an attempt to spawn a reverse shell on a specified IP and PORT will be tried. We can bypass firewall rules as checks by Netfilter are done before reaching any firewall rule.
 
 
 > [!TIP]
