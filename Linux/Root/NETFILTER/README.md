@@ -169,7 +169,7 @@ Basically, what we're doing is intercepting TCP packets at a low level and extra
 make clean 
 sudo make remove # if loaded previously
 sudo make # compile 
-sudo insert # load at runtime
+sudo make insert # load at runtime
 sudo make install # make the module persistent for system rebooting, do this only if everything go well
 ```
 
